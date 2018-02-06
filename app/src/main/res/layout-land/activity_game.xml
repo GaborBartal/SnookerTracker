@@ -94,7 +94,7 @@
                     android:layout_gravity="center_horizontal"
                     android:gravity="center|top"
                     android:padding="@dimen/gap1"
-                    android:text="0-0"
+                    android:text="0 (0) 0"
                     android:textSize="@dimen/font_size_level2"
                     android:textStyle="bold" />
 

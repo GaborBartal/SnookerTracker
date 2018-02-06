@@ -743,7 +743,7 @@ public class GameActivity extends Activity {
         strReferee = getString(R.string.str_referee_starter, strPlayer);
 
         nrPtsA = 0;
-        nrPtsB = 30;
+        nrPtsB = 0;
         nrPtsCurrent = 0;
         nrPtsIdle = 0;
         nrBreak = 0;
@@ -755,7 +755,7 @@ public class GameActivity extends Activity {
         nrHitsB = 0;
 
         nrDeactivatedBall = 0;
-        nrRedsAvailable = 1;
+        nrRedsAvailable = 15;
         nrPtsLeft = 0;
         nrPtsDifference = 0;
 
