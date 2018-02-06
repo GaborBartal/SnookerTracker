@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Snooker Tracker</string>
+    <string name="app_player_settings">Player settings</string>
+    <string name="str_incomplete_name">Enter your name</string>
+    <string name="str_incomplete_opponent">Select your opponent</string>
+    <string name="str_incomplete_full">Enter your name, <br />Select your opponent</string>
+    <string name="str_name_hint"><i>Enter your name</i></string>
+    <string name="str_rules">RULES</string>
+    <string name="str_start_match">START</string>
+    <string name="str_rules_url">https://en.wikipedia.org/wiki/Rules_of_snooker</string>
+
+    <string name="btn_red">Red (%1$d)</string>
+    <string name="btn_yellow">Yellow</string>
+    <string name="btn_green">Green</string>
+    <string name="btn_brown">Brown</string>
+    <string name="btn_blue">Blue</string>
+    <string name="btn_pink">Pink</string>
+    <string name="btn_black">Black</string>
+    <string name="btn_miss">Miss</string>
+    <string name="btn_foul">Foul</string>
+
+    <string name="str_referee_starter">Frame 1, %1$s to break.</string>
+    <string name="str_referee_foul">Foul. %1$s: %2$d</string>
+    <string name="str_referee_frame_won">%1$s: %2$d and a frame</string>
+    <string name="str_referee_frame_lost">%1$s: %2$d. Frame: %3$s</string>
+    <string name="str_referee_tied">Tied frame, coin toss: %1$s continues.</string>
+
+    <string name="str_scroller">Snooker tracker. Choose ball to pot, valid moves are marked green. Points: red: 1, colors: 2-7 (yellow to black). Use \"Missed\" button when nothing is potted, \"Foul\" button for generic fouls. Rules: Use the \"Rules\" button on the launch page.</string>
+    <string name="str_good_luck">Good luck!</string>
+    <string name="str_frame_compare" translatable="false">%1$d (%2$d) %3$d</string>
+    <string name="str_frame_won">You won the frame! %1$d-%2$d</string>
+    <string name="str_frame_lost">You lost the frame. %1$d-%2$d</string>
+    <string name="str_frame_stats">&lt;br />&lt;font color=#FF5722>&lt;b>Referee:&lt;/b> &lt;i>%1$s&lt;/i>&lt;/font>&lt;br />&lt;b>Stats:&lt;/b>&lt;br />Max break: %2$d-%3$d&lt;br />Mistakes: %4$d-%5$d&lt;br />Balls potted: %6$d-%7$d</string>
+    <string name="str_game_won">&lt;b>You won the game!&lt;/b></string>
+    <string name="str_game_lost">&lt;b>You lost the game.&lt;/b></string>
+    <string name="str_game_stats">&lt;b>Winner:&lt;/b> %1$s, %2$d-%3$d (%4$d frame game)&lt;br />&lt;font color=#FF5722>&lt;b>Referee:&lt;/b>&lt;i>%5$s&lt;/i>&lt;/font>&lt;br />&lt;b>Stats:&lt;/b>&lt;br />Highest frame point: %6$d, %7$d&lt;br />Highest break: %8$d, %9$d</string>
+    <string name="str_game_stats_max_break">&lt;br />%1$s got maximum break!</string>
+
+
+    <string name="str_player_a">Player A</string>
+    <string name="str_player_b">Player B</string>
+    <string name="str_player_a_score" translatable="false">0</string>
+    <string name="str_player_b_score" translatable="false">0</string>
+    <string name="str_player_stats" translatable="false"> </string>
+    <string name="str_restart">Restart match</string>
+    <string name="str_next_frame">Next frame</string>
+    <string name="str_new_game">New game</string>
+    <string name="str_quit_app">Quit</string>
+    <string name="str_nr_frames_selection" translatable="false">5</string>
+    <string name="str_nr_frames_static">Frames:</string>
+    <string name="str_opponent_list_static">Your opponent:</string>
+    <string name="str_realtime_stats_behind">Frame: %1$d, Behind: %2$d, Remaining: %3$d</string>
+    <string name="str_realtime_stats_ahead">Frame: %1$d, Ahead: %2$d, Remaining: %3$d</string>
+    <string name="str_break">, Break: %1$d</string>
+
+</resources>

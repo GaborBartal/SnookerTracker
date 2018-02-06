@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/UserConfig"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:foreground="@drawable/gradient_shape_user">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/snooker_table5" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/gap2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_app_title_menu"
+            style="@style/UserConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/gap2"
+            android:text="@string/app_name"
+            android:textColor="@color/title_brown"
+            android:textSize="@dimen/font_size_level3"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_player_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_box"
+            android:hint="@string/str_name_hint"
+            android:textSize="@dimen/font_size_level2" />
+
+        <TextView
+            android:id="@+id/tv_opponent_list_static"
+            style="@style/UserConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/gap2"
+            android:text="@string/str_opponent_list_static"
+            android:textSize="@dimen/font_size_level2"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg_opponent_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ronnie O'Sullivan"
+                android:textSize="@dimen/font_size_level1" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="John Higgins"
+                android:textSize="@dimen/font_size_level1" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Judd Trump"
+                android:textSize="@dimen/font_size_level1" />
+
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Neil Robertson"
+                android:textSize="@dimen/font_size_level1" />
+
+            <RadioButton
+                android:id="@+id/rb5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stephen Hendry"
+                android:textSize="@dimen/font_size_level1" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_nr_frames_static"
+            style="@style/UserConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/gap2"
+            android:background="@color/transparent"
+            android:text="@string/str_nr_frames_static"
+            android:textSize="@dimen/font_size_level2"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sw_nr_frames"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="@dimen/gap2"
+                android:switchMinWidth="0dp"
+                android:thumbTintMode="multiply" />
+
+            <TextView
+                android:id="@+id/tv_nr_frames"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_nr_frames_selection"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_rules"
+            style="@style/Button_Main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="showRules"
+            android:text="@string/str_rules"
+            android:textAllCaps="true"
+            android:textSize="@dimen/font_size_level2" />
+
+        <Button
+            android:id="@+id/btn_start"
+            style="@style/Button_Main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="startGame"
+            android:text="@string/str_start_match"
+            android:textAllCaps="true"
+            android:textSize="@dimen/font_size_level2" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Snooker Tracker</string>
+    <string name="str_rules">SZABÁLYOK</string>
+    <string name="str_name_hint"><i>Add meg a neved</i></string>
+    <string name="str_incomplete_full">Add meg a neved,<br />Válassz ellenfelet.</string>
+    <string name="str_incomplete_opponent">Válassz ellenfelet.</string>
+    <string name="str_incomplete_name">Add meg a neved.</string>
+    <string name="app_player_settings">Játákos beállításai</string>
+    <string name="str_start_match">START</string>
+    <string name="btn_red">Piros (%1$d)</string>
+    <string name="btn_yellow">Sárga</string>
+    <string name="btn_green">Zöld</string>
+    <string name="btn_brown">Barna</string>
+    <string name="btn_blue">Kék</string>
+    <string name="btn_pink">Rózsa</string>
+    <string name="btn_black">Fekete</string>
+    <string name="btn_foul">Hiba</string>
+    <string name="btn_miss">Kimaradt</string>
+    <string name="str_referee_starter">1. frame, %1$s kezd.</string>
+    <string name="str_referee_foul">Hiba. %1$s: %2$d</string>
+    <string name="str_referee_frame_won">%1$s: %2$d és a frame.</string>
+    <string name="str_referee_frame_lost">%1$s: %2$d. %3$s kapja a frame-et.</string>
+    <string name="str_scroller">Snooker Tracker, egy snooker játszma követéséhez. Válaszd ki a belökendő golyót, a helyes lépés célgolyó(k) zölden vannak jelölve. Pontok: piros: 1, színesek: 2-7 (sárgától feketéig). Használd a \"Kimaradt\" gombot, ha semmit sem lökött be, és a \"Hiba\" gombot általános szabálytalanságnál. Szabályok: A főoldalon levő gombbal.</string>
+    <string name="str_good_luck">Sok szerencsét!</string>
+    <string name="str_frame_won">Megnyerted a frame-et! %1$d-%2$d</string>
+    <string name="str_frame_lost">Elvesztetted a frame-et. %1$d-%2$d</string>
+    <string name="str_game_won">&lt;b>Megnyerted a mérkőzést!&lt;/b></string>
+    <string name="str_game_lost">&lt;b>Elvesztetted a mérkőzést.&lt;/b></string>
+    <string name="str_game_stats_max_break">&lt;br />%1$s maximum break-et szerzett!</string>
+    <string name="str_player_a">\"A\" játékos</string>
+    <string name="str_player_b">\"B\" játékos</string>
+    <string name="str_restart">Mérkőzés újrakezdése</string>
+    <string name="str_next_frame">Következő frame</string>
+    <string name="str_new_game">Új játék</string>
+    <string name="str_quit_app">Kilépés</string>
+    <string name="str_nr_frames_static">Frame-ek:</string>
+    <string name="str_opponent_list_static">Válassz ellenfelet:</string>
+    <string name="str_realtime_stats_behind">Frame: %1$d, Hátrány: %2$d, Elérhető pontok: %3$d</string>
+    <string name="str_realtime_stats_ahead">Frame: %1$d, Előny: %2$d, Elérhető pontok: %3$d</string>
+    <string name="str_break">, Break: %1$d</string>
+    <string name="str_rules_url">https://hu.wikipedia.org/wiki/Snooker#Szab%C3%A1lyok</string>
+    <string name="str_game_stats">&lt;b>Nyertes:&lt;/b> %1$s, %2$d-%3$d (%4$d frame-es játék)&lt;br />&lt;font color=#FF5722>&lt;b>Bíró:&lt;/b>&lt;i>%5$s&lt;/i>&lt;/font>&lt;br />&lt;b>Statisztika:&lt;/b>&lt;br />Legmagasabb frame pont: %6$d, %7$d&lt;br />Legnagyobb break: %8$d, %9$d</string>
+    <string name="str_frame_stats">&lt;br />&lt;font color=#FF5722>&lt;b>Bíró:&lt;/b> &lt;i>%1$s&lt;/i>&lt;/font>&lt;br />&lt;b>Statisztika:&lt;/b>&lt;br />Legnagyobb break: %2$d-%3$d&lt;br />Hibák: %4$d-%5$d&lt;br />Belökött golyók: %6$d-%7$d</string>
+    <string name="str_referee_tied">Döntetlen. Pénzfeldobással %1$s következik.</string>
+</resources>

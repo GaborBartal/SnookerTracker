@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_size">8sp</dimen>
+    <dimen name="font_size_level1">12sp</dimen>
+    <dimen name="font_size_level2">16sp</dimen>
+    <dimen name="font_size_level3">24sp</dimen>
+    <dimen name="font_size_level4">36sp</dimen>
+
+    <dimen name="gap1">4dp</dimen>
+    <dimen name="gap2">6dp</dimen>
+    <dimen name="gap3">8dp</dimen>
+    <dimen name="gap4">12dp</dimen>
+    <dimen name="gap5">16dp</dimen>
+    <dimen name="gap6">38dp</dimen>
+</resources>

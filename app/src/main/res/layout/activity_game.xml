@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242">
+
+    <!--CONTAINER - VERTICAL: MAIN WINDOW-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Top scroller -->
+        <TextView
+            android:id="@+id/str_scroller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/str_scroller"
+            android:textColor="#aaa"
+            android:textSize="@dimen/font_size_level1"
+            android:textStyle="italic" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_main_portrait"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/snooker_table_selby" />
+
+            <ImageView
+                android:id="@+id/img_main_portrait_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cropToPadding="false"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gradient_shape2" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <!--CONTAINER - REST OF UI-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <!--CONTAINER - HORIZONTAL: PLAYERS-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--CONTAINER - VERTICAL: PLAYER A-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!--Player A-->
+                <TextView
+                    style="@style/PlayerData"
+                    android:id="@+id/str_player_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_player_left"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="@dimen/gap1"
+                    android:text="@string/str_player_a"
+                    android:textSize="@dimen/font_size_level2"
+                    android:textStyle="bold" />
+
+                <!--Score A-->
+                <TextView
+                    style="@style/PlayerData"
+                    android:id="@+id/str_player_a_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingBottom="@dimen/gap1"
+                    android:text="0"
+                    android:textSize="@dimen/font_size_level4" />
+
+            </LinearLayout>
+
+            <!--Reset-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_frame_compare"
+                    style="@style/PlayerData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="@dimen/gap1"
+                    android:text="0-0"
+                    android:textSize="@dimen/font_size_level2" />
+
+                <ImageButton
+                    android:id="@+id/btn_restart"
+                    style="@style/Button_Main"
+                    android:layout_width="@dimen/gap6"
+                    android:layout_height="@dimen/gap6"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/gap2"
+                    android:background="@drawable/btn_reset"
+                    android:onClick="resetFrame"
+                    android:text="R" />
+
+            </LinearLayout>
+
+            <!--CONTAINER - VERTICAL: PLAYER B-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!--Player B-->
+                <TextView
+                    style="@style/PlayerData"
+                    android:id="@+id/str_player_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="@dimen/gap1"
+                    android:text="@string/str_player_b"
+                    android:textSize="@dimen/font_size_level2"
+                    android:textStyle="bold" />
+
+                <!--Score B-->
+                <TextView
+                    style="@style/PlayerData"
+                    android:id="@+id/str_player_b_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingBottom="@dimen/gap1"
+                    android:text="0"
+                    android:textSize="@dimen/font_size_level4" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--CONTAINER - VERTICAL: MAIN TEXTS-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap4"
+            android:layout_marginRight="@dimen/gap4"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--REFEREE STATIC-->
+                <TextView
+                    style="@style/Referee"
+                    android:id="@+id/view_referee_static"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Referee: "
+                    android:textSize="@dimen/font_size_level2"
+                    android:textStyle="bold" />
+
+                <!--REFEREE ANNOUNCEMENT-->
+                <TextView
+                    style="@style/Referee"
+                    android:id="@+id/view_referee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Break-off"
+                    android:textSize="@dimen/font_size_level2"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <!--Player "Behind"-->
+            <TextView
+                android:id="@+id/view_player_stats"
+                style="@style/Text_Default"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/str_player_stats"
+                android:textSize="@dimen/font_size_level1"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <!--CONTAINER - HORIZONTAL: BUTTONS CONTAINER x2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/gap2"
+            android:layout_marginRight="@dimen/gap2"
+            android:orientation="horizontal">
+
+            <!--CONTAINER - VERTICAL: BUTTONS 1-->
+            <LinearLayout
+                android:id="@+id/layout_buttons_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!--Red ball-->
+                <Button
+                    android:id="@+id/btn_red"
+                    style="@style/Button_Main"
+                    android:onClick="playerAction"
+                    android:tag="1"
+                    android:text="Red (15)" />
+                <!--SPACER-->
+                <Button
+                    style="@style/Button_Main"
+                    android:text=""
+                    android:visibility="invisible" />
+                <!--SPACER-->
+                <Button
+                    style="@style/Button_Main"
+                    android:text=""
+                    android:visibility="invisible" />
+                <!--SPACER-->
+                <Button
+                    style="@style/Button_Main"
+                    android:text=""
+                    android:visibility="invisible" />
+                <!--MISS-->
+                <Button
+                    android:id="@+id/btn_miss"
+                    style="@style/Button_Main.Mistake"
+                    android:onClick="playerAction"
+                    android:tag="miss"
+                    android:text="MISSED"
+                    android:textColor="#000" />
+                <!--FOUL-->
+                <Button
+                    android:id="@+id/btn_foul"
+                    style="@style/Button_Main.Mistake"
+                    android:onClick="playerAction"
+                    android:tag="foul"
+                    android:text="FOUL"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+
+            <!--CONTAINER - VERTICAL: BUTTONS 2-->
+            <LinearLayout
+                android:id="@+id/layout_buttons_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!--Yellow ball-->
+                <Button
+                    android:id="@+id/btn_yellow"
+                    style="@style/Button_Main"
+                    android:onClick="playerAction"
+                    android:tag="2"
+                    android:text="Yellow" />
+                <!--Green ball-->
+                <Button
+                    android:id="@+id/btn_green"
+                    style="@style/Button_Main"
+                    android:onClick="playerAction"
+                    android:tag="3"
+                    android:text="Green" />
+                <!--Brown ball-->
+                <Button
+                    android:id="@+id/btn_brown"
+                    style="@style/Button_Main"
+                    android:onClick="playerAction"
+                    android:tag="4"
+                    android:text="Brown" />
+                <!--Blue ball-->
+                <Button
+                    android:id="@+id/btn_blue"
+                    style="@style/Button_Main"
+                    android:onClick="playerAction"
+                    android:tag="5"
+                    android:text="Blue" />
+                <!--Pink ball-->
+                <Button
+                    android:id="@+id/btn_pink"
+                    style="@style/Button_Main"
+                    android:onClick="playerAction"
+                    android:tag="6"
+                    android:text="Pink" />
+                <!--Black ball-->
+                <Button
+                    android:id="@+id/btn_black"
+                    style="@style/Button_Main"
+                    android:onClick="playerAction"
+                    android:tag="7"
+                    android:text="Black" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
